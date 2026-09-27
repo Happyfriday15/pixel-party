@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a14" />
+    <title>PIXEL//PARTY — student arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="site-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Pixel Party home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>PIXEL<span class="brand-slash">//</span>PARTY</span>
+        </a>
+        <div class="nav-status"><span class="status-dot"></span> ALL SYSTEMS ONLINE</div>
+        <a class="nav-link" href="#games">BROWSE GAMES <span>↘</span></a>
+      </nav>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">// STUDENT ARCADE / VOL. 01</p>
+            <h1>YOUR BREAK.<br /><span>YOUR RULES.</span></h1>
+            <p class="hero-description">Four classic games. Zero downloads.<br />Built for the five-minute study break.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#games">PLAY NOW <span>↗</span></a>
+              <span class="shortcut-note"><kbd>SPACE</kbd> to pause<br /><kbd>ESC</kbd> to exit</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="hero-cube"><div class="cube-face cube-top"></div><div class="cube-face cube-front"></div><div class="cube-face cube-side"></div><i></i></div>
+            <div class="floating-chip chip-one">01<br /><small>INSERT COIN</small></div>
+            <div class="floating-chip chip-two">HIGH<br /><small>SCORE</small></div>
+            <div class="crosshair">+</div>
+            <div class="hero-coordinates">N 34° 02'  /  W 118° 14'</div>
+          </div>
+        </section>
+
+        <section class="games-section" id="games">
+          <div class="section-heading">
+            <div><p class="eyebrow">// SELECT YOUR REALITY</p><h2>THE ARCADE</h2></div>
+            <span class="game-count">04 GAMES AVAILABLE</span>
+          </div>
+          <div class="game-grid">
+            <article class="game-card featured" data-game="snake">
+              <div class="card-top"><span class="game-number">01</span><span class="game-tag">CLASSIC</span></div>
+              <div class="game-visual snake-visual"><span class="snake-head"></span><span class="snake-body b1"></span><span class="snake-body b2"></span><span class="snake-body b3"></span><span class="snake-food"></span><div class="visual-grid"></div></div>
+              <div class="card-bottom"><div><h3>SNAKE</h3><p>Don't hit the walls.</p></div><button class="play-card" aria-label="Play Snake">PLAY <span>↗</span></button></div>
+            </article>
+            <article class="game-card" data-game="tetris">
+              <div class="card-top"><span class="game-number">02</span><span class="game-tag">STACK</span></div>
+              <div class="game-visual tetris-visual"><div class="tetris-stack"><i class="tet-pink"></i><i class="tet-cyan"></i><i class="tet-yellow"></i><i class="tet-purple"></i><i class="tet-green"></i></div><span class="falling-piece"></span><div class="visual-grid"></div></div>
+              <div class="card-bottom"><div><h3>TETRIS</h3><p>Clear the signal.</p></div><button class="play-card" aria-label="Play Tetris">PLAY <span>↗</span></button></div>
+            </article>
+            <article class="game-card" data-game="2048">
+              <div class="card-top"><span class="game-number">03</span><span class="game-tag">PUZZLE</span></div>
+              <div class="game-visual tile-visual"><span class="tile tile-2">2</span><span class="tile tile-4">4</span><span class="tile tile-8">8</span><span class="tile tile-16">16</span><span class="tile tile-32">32</span><span class="tile tile-64">64</span></div>
+              <div class="card-bottom"><div><h3>2048</h3><p>One more move.</p></div><button class="play-card" aria-label="Play 2048">PLAY <span>↗</span></button></div>
+            </article>
+            <article class="game-card" data-game="pong">
+              <div class="card-top"><span class="game-number">04</span><span class="game-tag">VERSUS</span></div>
+              <div class="game-visual pong-visual"><span class="pong-paddle left"></span><span class="pong-paddle right"></span><span class="pong-ball"></span><span class="pong-line"></span><span class="pong-score">07 : 03</span></div>
+              <div class="card-bottom"><div><h3>PONG</h3><p>Beat the machine.</p></div><button class="play-card" aria-label="Play Pong">PLAY <span>↗</span></button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="marquee" aria-label="Pixel Party features"><div class="marquee-track">NO SIGN UP <span>✦</span> NO ADS <span>✦</span> NO DOWNLOADS <span>✦</span> JUST PLAY <span>✦</span> NO SIGN UP <span>✦</span> NO ADS <span>✦</span> NO DOWNLOADS <span>✦</span> JUST PLAY <span>✦</span></div></section>
+
+        <section class="shop-section" id="shop">
+          <div class="shop-heading"><div><p class="eyebrow">// SPEND YOUR SIGNAL</p><h2>THE SHOP</h2></div><div class="wallet"><span>◈</span><strong id="creditBalance">000000</strong><small>ARCADE CREDITS</small></div></div>
+          <div class="shop-grid">
+            <article class="shop-item cosmetic-item" data-shop-item="lime-trail"><div class="shop-icon lime-icon">✦</div><div class="shop-item-copy"><span class="shop-type">COSMETIC</span><h3>LIME TRAIL</h3><p>Make every game glow electric green.</p></div><button class="shop-button" data-shop-action>BUY · <b>250</b></button></article>
+            <article class="shop-item cosmetic-item" data-shop-item="pink-pulse"><div class="shop-icon pink-icon">◉</div><div class="shop-item-copy"><span class="shop-type">COSMETIC</span><h3>PINK PULSE</h3><p>Turn your arcade signal hot magenta.</p></div><button class="shop-button" data-shop-action>BUY · <b>350</b></button></article>
+            <article class="shop-item upgrade-item" data-shop-item="slow-snake"><div class="shop-icon cyan-icon">◌</div><div class="shop-item-copy"><span class="shop-type">UPGRADE</span><h3>CALM CIRCUIT</h3><p>Snake moves 20% slower. More time to turn.</p></div><button class="shop-button" data-shop-action>BUY · <b>300</b></button></article>
+            <article class="shop-item upgrade-item" data-shop-item="bot-lag"><div class="shop-icon purple-icon">⌁</div><div class="shop-item-copy"><span class="shop-type">UPGRADE</span><h3>BOT LAG</h3><p>Make the Pong robot hesitate on every rally.</p></div><button class="shop-button" data-shop-action>BUY · <b>400</b></button></article>
+          </div>
+          <p class="shop-note" id="shopNote">Earn credits by playing. Cosmetics can be equipped after purchase.</p>
+        </section>
+
+        <section class="lower-section">
+          <div class="signal-card"><div class="signal-icon">⌁</div><div><p class="eyebrow">// WHY PIXEL PARTY?</p><h2>MADE FOR<br /><span>IN-BETWEENS.</span></h2><p>Waiting for class. Between assignments. Five minutes before the bus. Pixel Party turns the gaps into game time.</p></div></div>
+          <div class="leaderboard"><div class="leaderboard-title"><p class="eyebrow">// TODAY'S SIGNAL</p><span>GLOBAL TOP 03</span></div><div class="score-row"><span class="rank">01</span><strong>neon_kiwi</strong><span class="score">18,420</span></div><div class="score-row"><span class="rank">02</span><strong>pixelghost</strong><span class="score">16,980</span></div><div class="score-row current"><span class="rank">03</span><strong>you?</strong><span class="score">— — —</span></div><button class="leaderboard-button" id="randomScore">GENERATE ALIAS <span>↗</span></button></div>
+        </section>
+      </main>
+      <footer><span>© 2024 PIXEL//PARTY</span><span>BUILT FOR THE BETWEEN MOMENTS</span><span class="footer-signal">● SIGNAL STABLE</span></footer>
+    </div>
+
+    <div class="modal-backdrop" id="gameModal" aria-hidden="true"><div class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-bar"><span id="modalLabel">GAME SESSION</span><button id="closeModal" aria-label="Close game">×</button></div><h2 id="modalTitle">SNAKE</h2><p id="modalInstructions">Use arrow keys to move. Eat the nodes. Don't collide.</p><div class="game-stage" id="gameStage"></div><div class="modal-footer"><span id="gameScore">SCORE 000000</span><span id="bestScore">BEST 000000</span><span class="modal-key"><kbd>SPACE</kbd> PAUSE</span><button class="mode-toggle" id="pongMode" hidden>2P LOCAL</button><button class="button button-primary" id="restartGame">RESTART ↻</button></div></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
